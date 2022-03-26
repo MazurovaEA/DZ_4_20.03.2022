@@ -1,7 +1,7 @@
 ﻿// Напишите программу, которая задаёт массив из 8 элементов случайными числами и выводит их на экран. 
 // Оформите заполнение массива и вывод в виде функции (пригодится в следующих задачах)
 
-void FindArray(int[] arr)
+void FillArray(int[] arr)
 {
     Random rnd = new Random();
     for (int i = 0; i < arr.Length; i++)
@@ -17,10 +17,10 @@ void PrintArray(int[] collect)
         Console.Write(collect[i] + ",");
 
     }
-    Console.Write(collect[collect.Length - 2] + "]");
+    Console.Write(collect[collect.Length - 1] + "]");
 }
 
 int[] arr = new int[8];
 
-FindArray(arr);
+FillArray(arr);
 PrintArray(arr);
